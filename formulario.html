@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,900">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script async type="text/javascript" src="js/validacion.js"></script>
+	<title>Formulario</title>
+</head>
+<body>
+	<div class="container">
+		<div class="form_top">
+			<div><img id="img" src="logo con av.png"></div>
+			<h2>CAUL ES TU <span> SUEÑO VACACIONAL!</span></h2>
+		</div>
+		<form class="form_reg" name="formulario" method="post" id="formulario">
+             <input class="input" type="text" id="nombre" placeholder="&#x2708;NOMBRE"  autofocus>
+            
+             <input class="input" type="text" id="apellido" placeholder="&#x2708;APELLIDO" ></br>
+            
+             <select name="zona" id="zona"  >
+			     <option value="1">TIPO DE DOCUMENTO</option> 	
+				 <option value="2">C.C</option>
+				 <option value="3">T.I</option>
+				 <option value="4">PAS.</option>
+				 <option value="5">EXTRAJERA</option>
+			 </select></br>
+
+             <input class="input" type="text" id="numero" placeholder="&#x2708;DOCUMENTO DE IDENTIDAD" >
+             
+             <input class="input" type="date" id="fecha" placeholder="&#x1F4C6;FECHA DE VIAJE" >
+             
+             <input class="input" type="number" id="persona" placeholder="&#x0023;DE PERSONAS" ></br>
+             
+             <label id="opciones"> ACOMODACION</label><br/></br>
+		     <label><input type="radio" name="tipo" value="t1">SENCILLA</br><input type="radio" name="tipo" value="t2">DOBLE</br><input type="radio" name="tipo" value="t3">TRIPLE</br><input type="radio" name="tipo" value="t4">CUADRUPLE</br></label>    
+             <p>LUGARES DESTINO:</p>
+	
+		    <select name="zona" id="zona1"  >
+			    <option value="1">SELECIONE TU DESTINO</option> 	
+				<option value="2">SAN ANDRES</option>
+				<option value="3">CARTAGENA</option>
+				<option value="4">BOGOTA</option>
+				<option value="5">COVEÑAS</option>
+		    </select></br>
+
+
+             <input class="input" type="number" id="valor" placeholder="&#x1F4B2;CANTIDAD A GASTAR" ></br>
+
+             <textarea name="texto" id="text" placeholder="DESCRICION DE COMO QUIERES TU VIAJE"></textarea></br>
+
+
+             <p>INFORMACION DE CONTACTO:</p>
+
+             <input class="input" type="email" id="email" placeholder="&#9993;Email" ></br>
+
+             <input class="input" type="tel" id="telefono" placeholder="&#128222;Telefono" ></br>
+
+             <input class="input" type="text" id="direccion" placeholder="&#x1F3E0;Dirección" ></br>
+
+           	<input type="checkbox" name="terminos" id="terminos">
+					<label for="terminos"> Acepto términos y condiciones</label></br>
+
+             <div class="btn_form">
+             	<button type="button" class="btn_submit" onclick="validacion();" >ENVIA TU SUEÑO</button>           
+             </div>
+		</form>
+	</div>
+	                <input id="mierda" type="text" onkeyup="buscar()" />
+					<center>
+					<h1>   DATOS DEL CONTACTO  </h1></br>			
+					<table  border="1" id="Tabla">
+						<thead>
+							
+						<tr>
+							<th>Nombre</th>
+							<th>Identificacion</th>
+							<th>N de personas</th>
+							<th>Destino</th>
+							<th>Monto</th>
+							<th>Email</th>
+							<th>Telefono</th>
+							<th>Dirección</th>			
+						</tr>
+						</thead>
+						<tbody id="body">
+							
+						</tbody>
+					</table></br>
+					</center>	
+					
+</body>
+</html>
